@@ -6,7 +6,7 @@
 <div class="team-member-detail">
   <div class="team-member-header">
     <div class="team-member-photo">
-      <img src="/{{ $member.avatar }}" alt="{{ $member.first_name }} {{ $member.last_name }}" class="avatar-large" />
+      <img src="{{ $member.avatar | relURL}}" alt="{{ $member.first_name }} {{ $member.last_name }}" class="avatar-large" />
     </div>
     <div class="team-member-basic-info">
       <h1>{{ $member.deg }} {{ $member.first_name }} {{ $member.last_name }}</h1>
