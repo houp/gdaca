@@ -12,7 +12,7 @@
 
   {{ range $member := $sorted }}
     <div class="team-member">
-      <a href="team/{{ $member.slug }}/" class="team-member-link">
+      <a href="{{ printf "/team/%s/" $member.slug | relURL }}" class="team-member-link">
         <img src="{{ $member.avatar | relURL }}" alt="{{ $member.first_name }} {{ $member.last_name }}" class="avatar" />
         <h3>{{ $member.deg }} {{ $member.first_name }} {{ $member.last_name }}</h3>
       </a>
@@ -29,7 +29,7 @@
         {{ end }}
       </div>
       <div class="team-member-actions">
-        <a href="/team/{{ $member.slug }}/" class="view-profile-btn">View Full Profile</a>
+        <a href="{{ printf "/team/%s/" $member.slug | relURL }}" class="view-profile-btn">View Full Profile</a>
       </div>
     </div>
   {{ end }}
