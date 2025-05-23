@@ -1,6 +1,6 @@
-baseURL = "https://<your-github-username>.github.io/"
+baseURL = "https://houp.github.io/gdaca/"
 languageCode = "en-us"
-title = "Gdańsk CA Group"
+title = "GDAńsk CA Group"
 theme = "PaperMod"
 
 [params]
