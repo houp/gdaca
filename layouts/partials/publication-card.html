@@ -22,7 +22,7 @@
         {{- if $memberInfo -}}
           <span class="team-author-with-avatar">
             <img src="{{ $memberInfo.data.avatar | relURL }}" alt="{{ $author }}" class="author-avatar">
-            <a href="{{ printf "/team/%s/" $memberInfo.filename | relURL }}" class="team-author-link">
+            <a href="{{ printf "team/%s/" $memberInfo.filename | relURL }}" class="team-author-link">
               <strong class="team-author">{{- $author -}}</strong>
             </a>
           </span>

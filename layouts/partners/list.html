@@ -19,7 +19,7 @@
         <div class="team-member-item">
           <span class="team-author-with-avatar">
             <img src="{{ $memberData.avatar | relURL }}" alt="{{ $memberData.first_name }} {{ $memberData.last_name }}" class="author-avatar">
-            <a href="{{ printf "/team/%s/" . | relURL }}" class="team-author-link">
+            <a href="{{ printf "team/%s/" . | relURL }}" class="team-author-link">
               <strong class="team-author">{{ $memberData.first_name }} {{ $memberData.last_name }}</strong>
             </a>, 
           </span>
