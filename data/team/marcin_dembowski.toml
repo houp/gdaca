@@ -1,0 +1,13 @@
+first_name = "Marcin"
+last_name = "Dembowski"
+role = "Independent Research"
+affiliation = "Xebia"
+email = "marcin.dembowski@gmail.com"
+avatar = "photos/marcin.jpg"
+links = [
+  { name = "orcid", url = "https://orcid.org/0000-0001-6787-2100" },
+  { name = "google-scholar", url = "https://scholar.google.com/citations?user=gzPEHZ8AAAAJ" },
+  { name = "linkedin", url = "https://www.linkedin.com/in/d3m80l/" },
+  { name = "researchgate", url = "https://www.researchgate.net/profile/Witold-Bolt" },
+  { name = "github", url = "https://github.com/houp" }  
+]

@@ -1,0 +1,76 @@
+{{/* 
+  Reusable publication card partial
+  Parameters:
+  - pub: publication object
+  - teamAuthors: array of team author names
+  - teamMemberMap: map of author names to team member data
+*/}}
+
+{{ $pub := .pub }}
+{{ $teamAuthors := .teamAuthors }}
+{{ $teamMemberMap := .teamMemberMap }}
+
+<article class="publication-card" data-type="{{ $pub.type }}">
+  <header class="pub-header">
+    <h3 class="pub-title">{{ $pub.title | markdownify }}</h3>
+  </header>
+  
+  <div class="pub-authors">
+    {{- range $i, $author := $pub.authors -}}
+      {{- if in $teamAuthors $author -}}
+        {{- $memberInfo := index $teamMemberMap $author -}}
+        {{- if $memberInfo -}}
+          <span class="team-author-with-avatar">
+            <img src="{{ $memberInfo.data.avatar | relURL }}" alt="{{ $author }}" class="author-avatar">
+            <a href="{{ printf "/team/%s/" $memberInfo.filename | relURL }}" class="team-author-link">
+              <strong class="team-author">{{- $author -}}</strong>
+            </a>
+          </span>
+        {{- else -}}
+          <strong class="team-author">{{- $author -}}</strong>
+        {{- end -}}
+      {{- else -}}
+        <span class="external-author">{{- $author -}}</span>
+      {{- end -}}
+      {{- if lt (add $i 1) (len $pub.authors) }} | {{ end -}}
+    {{- end }}
+  </div>
+
+  <div class="pub-venue">
+    <em>{{ $pub.venue }}, <b>{{ $pub.year }}</b></em>
+    <span class="pub-type-badge">{{ $pub.type }}</span>
+  </div>
+
+  <footer class="pub-footer">
+    <div class="pub-links">
+      {{ if $pub.pdf }}
+        <a href="{{ $pub.pdf }}" title="PDF" target="_blank" class="pub-link">
+          <i class="fas fa-file-pdf"></i> PDF
+        </a>
+      {{ end }}
+      {{ if $pub.video }}
+        <a href="{{ $pub.video }}" title="Video" target="_blank" class="pub-link">
+          <i class="fas fa-video"></i> Video
+        </a>
+      {{ end }}
+      {{ range $pub.links }}
+        <a href="{{ .url }}" title="{{ .name }}" target="_blank" class="pub-link">
+          <i class="fas fa-link"></i> {{ .name }}
+        </a>
+      {{ end }}
+      {{ if $pub.bibtex }}
+        <a href="#" onclick="showBibtex(this); return false;" title="BibTeX" class="pub-link">
+          <i class="fas fa-code"></i> BibTeX
+        </a>
+        <div class="bibtex-container" style="display: none;">
+          <div class="bibtex-header">
+            <button onclick="copyBibtex(this)" class="copy-bibtex-btn" title="Copy to clipboard">
+              <i class="fas fa-copy"></i> Copy
+            </button>
+          </div>
+          <pre class="bibtex-block">{{ $pub.bibtex | safeHTML }}</pre>
+        </div>
+      {{ end }}
+    </div>
+  </footer>
+</article>

@@ -1,0 +1,12 @@
+first_name = "Maciej"
+last_name = "Dziemiańczuk"
+deg = "dr"
+role = "Assistant Professor"
+affiliation = "University of Gdansk"
+email = "maciej.dziemianczuk@ug.edu.pl"
+avatar = "photos/maciej.jpg"
+links = [
+  { name = "orcid", url = "https://orcid.org/0000-0002-0553-7750" },
+  { name = "google-scholar", url = "https://scholar.google.com/citations?user=njQlnGEAAAAJ" },
+  { name = "website", url="https://inf.ug.edu.pl/~mdziemia/"}
+]

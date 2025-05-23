@@ -1,0 +1,64 @@
+<script>
+  function filterPubs() {
+    const selected = document.getElementById("type-filter").value;
+    
+    // Handle both old pub-item and new publication-card layouts
+    document.querySelectorAll(".pub-item, .publication-card").forEach(item => {
+      const type = item.dataset.type;
+      item.style.display = (!selected || selected === type) ? "" : "none";
+    });
+    
+    // Hide/show year sections if all publications in that year are hidden
+    document.querySelectorAll(".year-section").forEach(yearSection => {
+      const visibleCards = yearSection.querySelectorAll(".publication-card:not([style*='display: none'])");
+      yearSection.style.display = visibleCards.length > 0 ? "" : "none";
+    });
+  }
+  
+  function showBibtex(link) {
+    // Find the bibtex container (either old bibtex-block or new bibtex-container)
+    const bibContainer = link.nextElementSibling;
+    if (bibContainer) {
+      bibContainer.style.display = (bibContainer.style.display === "none") ? "block" : "none";
+    }
+  }
+  
+  function copyBibtex(button) {
+    // Find the bibtex text within the same container
+    const bibContainer = button.closest('.bibtex-container');
+    const bibText = bibContainer.querySelector('.bibtex-block').textContent;
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(bibText).then(function() {
+      // Show success feedback
+      const originalText = button.innerHTML;
+      button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      button.classList.add('copied');
+      
+      // Reset button after 2 seconds
+      setTimeout(function() {
+        button.innerHTML = originalText;
+        button.classList.remove('copied');
+      }, 2000);
+    }).catch(function(err) {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = bibText;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      
+      // Show success feedback
+      const originalText = button.innerHTML;
+      button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      button.classList.add('copied');
+      
+      // Reset button after 2 seconds
+      setTimeout(function() {
+        button.innerHTML = originalText;
+        button.classList.remove('copied');
+      }, 2000);
+    });
+  }
+  </script>

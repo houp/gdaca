@@ -1,0 +1,70 @@
+{{/* 
+  Reusable publication list partial
+  Parameters:
+  - publications: array of publications to display
+  - teamAuthors: array of team author names
+  - teamMemberMap: map of author names to team member data
+  - showYearHeaders: boolean to show year section headers (default: true)
+  - sortOrder: "desc" for newest first, "asc" for oldest first (default: "desc")
+*/}}
+
+{{ $publications := .publications }}
+{{ $teamAuthors := .teamAuthors }}
+{{ $teamMemberMap := .teamMemberMap }}
+{{ $showYearHeaders := default true .showYearHeaders }}
+{{ $sortOrder := default "desc" .sortOrder }}
+
+{{ if $publications }}
+  {{ $sorted := sort $publications "year" }}
+  {{ if eq $sortOrder "desc" }}
+    {{ $sorted = sort $publications "year" "desc" }}
+  {{ end }}
+
+  {{ if $showYearHeaders }}
+    {{/* Group by year */}}
+    {{ $byYear := dict }}
+    {{ $yearSet := slice }}
+
+    {{ range $pub := $sorted }}
+      {{ $year := printf "%v" $pub.year }}
+      {{ $group := or (index $byYear $year) (slice) }}
+      {{ $group = $group | append $pub }}
+      {{ $byYear = merge $byYear (dict $year $group) }}
+
+      {{ if not (in $yearSet $year) }}
+        {{ $yearSet = $yearSet | append $year }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Sort years */}}
+    {{ $years := sort $yearSet }}
+    {{ if eq $sortOrder "desc" }}
+      {{ $years = slice }}
+      {{ range $i, $y := sort $yearSet }}
+        {{ $years = (slice $y) | append $years }}
+      {{ end }}
+    {{ end }}
+
+    <div class="publications-container">
+      {{ range $year := $years }}
+        <div class="year-section">
+          <h2 class="year-header">{{ $year }}</h2>
+          <div class="publications-grid">
+            {{ range $pub := index $byYear $year }}
+              {{ partial "publication-card.html" (dict "pub" $pub "teamAuthors" $teamAuthors "teamMemberMap" $teamMemberMap) }}
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    {{/* Simple list without year headers */}}
+    <div class="publications-grid">
+      {{ range $pub := $sorted }}
+        {{ partial "publication-card.html" (dict "pub" $pub "teamAuthors" $teamAuthors "teamMemberMap" $teamMemberMap) }}
+      {{ end }}
+    </div>
+  {{ end }}
+{{ else }}
+  <p>No publications found.</p>
+{{ end }}

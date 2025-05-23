@@ -1,0 +1,14 @@
+weight = 0
+first_name = "Barbara"
+last_name = "Wolnik"
+deg = "prof. dr hab."
+role = "Full-time Professor, Team Leader"
+affiliation = "University of Gdansk"
+email = "barbara.wolnik@ug.edu.pl"
+avatar = "photos/basia.jpg"
+links = [
+  { name = "orcid", url = "https://orcid.org/0000-0003-2935-5529" },
+  { name = "google-scholar", url = "https://scholar.google.com/citations?user=MS6NxAQAAAAJ" },
+  { name = "linkedin", url = "https://www.linkedin.com/in/barbara-wolnik-865b57253/" },
+  { name = "researchgate", url = "https://www.researchgate.net/profile/Barbara-Wolnik-2"}
+]

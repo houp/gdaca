@@ -1,0 +1,57 @@
+# Template for adding detailed information to team member TOML files
+# Copy the sections below and add them to each team member's TOML file in data/team/
+
+# Basic information (already exists in most files)
+first_name = "First Name"
+last_name = "Last Name"
+deg = "dr"  # or other degree
+role = "Position Title"
+affiliation = "Institution Name"
+email = "email@example.com"
+avatar = "photos/filename.jpg"
+weight = 1  # Lower numbers appear first in the list
+
+# Detailed information for individual page
+bio = """
+Brief biography describing the person's background, expertise, and current focus.
+This can be multiple paragraphs and supports basic markdown formatting.
+"""
+
+research_interests = [
+  "Research Area 1",
+  "Research Area 2",
+  "Research Area 3",
+  "Research Area 4"
+]
+
+education = [
+  { degree = "Ph.D. in Field", institution = "University Name", year = "2020" },
+  { degree = "M.Sc. in Field", institution = "University Name", year = "2016" },
+  { degree = "B.Sc. in Field", institution = "University Name", year = "2014" }
+]
+
+experience = [
+  { position = "Current Position", organization = "Current Organization", period = "2020 - Present", description = "Description of current role and responsibilities." },
+  { position = "Previous Position", organization = "Previous Organization", period = "2018 - 2020", description = "Description of previous role and achievements." }
+]
+
+publications_highlight = [
+  "Important Publication Title (2023)",
+  "Another Significant Work (2022)",
+  "Key Research Paper (2021)"
+]
+
+links = [
+  { name = "orcid", url = "https://orcid.org/0000-0000-0000-0000" },
+  { name = "google-scholar", url = "https://scholar.google.com/citations?user=USERID" },
+  { name = "linkedin", url = "https://www.linkedin.com/in/username/" },
+  { name = "researchgate", url = "https://www.researchgate.net/profile/Name" },
+  { name = "github", url = "https://github.com/username" }
+]
+
+# Instructions:
+# 1. Copy the sections you need from this template
+# 2. Add them to the existing TOML file for each team member
+# 3. Fill in the actual information
+# 4. Remove any sections that don't apply (e.g., if someone doesn't have a GitHub)
+# 5. The individual team member pages will automatically display the information

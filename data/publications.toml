@@ -1,0 +1,276 @@
+[[publications]]
+title = "Identifying CAs with evolutionary algorithms"
+authors = [ "Witold Bołt", "Jan Baetens", "Bernard Baets",]
+year = 2013
+type = "Conference"
+venue = "Proceedings of the 19th International Workshop on Cellular Automata and Discrete Complex Systems (AUTOMATA 2013)"
+bibtex = "@inproceedings{Bolt2013,\n    author = \"Bołt, Witold and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"Identifying CAs with evolutionary algorithms\",\n    booktitle = \"Proceedings of the 19th International Workshop on Cellular Automata and Discrete Complex Systems (AUTOMATA 2013)\",\n    pages = \"11--21\",\n    year = \"2013\",\n    abstract = \"We introduce an evolutionary algorithm for the identification of cellular automata (CAs) from partial observation data. The approach evolves candidate local transition rules and evaluates their fitness by how well the resulting CA matches observed behavior, enabling recovery of CA rules under various conditions:contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}.\"\n}\n"
+
+[[publications]]
+title = "On the decomposition of stochastic cellular automata"
+authors = [ "Witold Bołt", "Jan Baetens", "Bernard Baets",]
+year = 2015
+type = "Journal"
+venue = "Journal of Computational Science"
+bibtex = "@article{Bolt2015a,\n    author = \"Bołt, Witold and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"On the decomposition of stochastic cellular automata\",\n    journal = \"Journal of Computational Science\",\n    volume = \"11\",\n    pages = \"245--257\",\n    year = \"2015\",\n    doi = \"10.1016/j.jocs.2015.09.004\",\n    abstract = \"Introduces a framework to decompose the global dynamics of stochastic cellular automata into contributions from deterministic sub-automata:contentReference[oaicite:3]{index=3}. By separating randomness from structural dynamics, the approach sheds light on how stochastic rules can be represented as combinations of simpler deterministic components.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1016/j.jocs.2015.09.004"
+
+
+[[publications]]
+title = "An evolutionary approach to the identification of cellular automata based on partial observations"
+authors = [ "Witold Bołt", "Jan Baetens", "Bernard Baets",]
+year = 2015
+type = "Conference"
+venue = "Proceedings of the IEEE Congress on Evolutionary Computation (CEC 2015)"
+bibtex = "@inproceedings{Bolt2015b,\n    author = \"Bołt, Witold and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"An evolutionary approach to the identification of cellular automata based on partial observations\",\n    booktitle = \"Proceedings of the IEEE Congress on Evolutionary Computation (CEC 2015)\",\n    pages = \"2966--2972\",\n    year = \"2015\",\n    doi = \"10.1109/CEC.2015.7257258\",\n    abstract = \"Describes the use of a genetic algorithm to identify local rules of a cellular automaton from partial, noisy observations:contentReference[oaicite:4]{index=4}. The evolutionary method evolves candidate rule sets, optimizing them so that the resulting CA reproduces observed spatio-temporal patterns. Results demonstrate robust rule identification despite incomplete data.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1109/CEC.2015.7257258"
+
+
+[[publications]]
+title = "On the Identification of $\\alpha$-Asynchronous Cellular Automata in the Case of Partial Observations with Spatially Separated Gaps"
+authors = [ "Witold Bołt", "Barbara Wolnik", "Jan Baetens", "Bernard Baets",]
+year = 2016
+type = "Pre-print"
+venue = "Challenging Problems and Solutions in Intelligent Systems"
+bibtex = "@incollection{Bolt2016,\n    author = \"Bołt, Witold and Wolnik, Barbara and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"On the Identification of $\\alpha$-Asynchronous Cellular Automata in the Case of Partial Observations with Spatially Separated Gaps\",\n    booktitle = \"Challenging Problems and Solutions in Intelligent Systems\",\n    series = \"Studies in Computational Intelligence\",\n    volume = \"634\",\n    publisher = \"Springer\",\n    address = \"Cham, Switzerland\",\n    pages = \"23--36\",\n    year = \"2016\",\n    doi = \"10.1007/978-3-319-30164-8\\_3\",\n    abstract = \"Presents a statistical frequency-based method to identify cellular automaton rules that update asynchronously:contentReference[oaicite:5]{index=5}:contentReference[oaicite:6]{index=6}. By analyzing partial observations with spatially separated gaps, the approach estimates the underlying rule of an $\\alpha$-asynchronous CA. The method’s efficacy is illustrated on CA identification problems with missing data and asynchronous updates.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1007/978-3-319-30164-8_3"
+
+
+[[publications]]
+title = "The Density Classification Problem in the Context of Continuous Cellular Automata"
+authors = [ "Barbara Wolnik", "Marcin Dembowski", "Witold Bołt", "Jan Baetens", "Bernard Baets",]
+year = 2016
+type = "Conference"
+venue = "Cellular Automata: 12th International Conference on Cellular Automata for Research and Industry (ACRI 2016)"
+bibtex = "@inproceedings{Wolnik2016,\n    author = \"Wolnik, Barbara and Dembowski, Marcin and Bołt, Witold and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"The Density Classification Problem in the Context of Continuous Cellular Automata\",\n    booktitle = \"Cellular Automata: 12th International Conference on Cellular Automata for Research and Industry (ACRI 2016)\",\n    series = \"Lecture Notes in Computer Science\",\n    volume = \"9863\",\n    publisher = \"Springer\",\n    address = \"Fez, Morocco\",\n    pages = \"79--87\",\n    year = \"2016\",\n    doi = \"10.1007/978-3-319-44365-2\\_9\",\n    abstract = \"Investigates the classical density classification task within the framework of affine continuous cellular automata:contentReference[oaicite:7]{index=7}:contentReference[oaicite:8]{index=8}. It is shown that standard binary CA impossibility results extend to this continuous setting, and the paper discusses how continuity and affinity constraints influence a CA’s ability to perform global density classification.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1007/978-3-319-44365-2_9"
+
+
+[[publications]]
+title = "A Statistical Approach to the Identification of Diploid Cellular Automata"
+authors = [ "Witold Bołt", "Aleksander Bołt", "Barbara Wolnik", "Jan Baetens", "Bernard Baets",]
+year = 2017
+type = "Conference"
+venue = "Theory and Practice of Natural Computing (TPNC 2017)"
+bibtex = "@inproceedings{Bolt2017,\n    author = \"Bołt, Witold and Bołt, Aleksander and Wolnik, Barbara and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"A Statistical Approach to the Identification of Diploid Cellular Automata\",\n    booktitle = \"Theory and Practice of Natural Computing (TPNC 2017)\",\n    series = \"Lecture Notes in Computer Science\",\n    volume = \"10687\",\n    publisher = \"Springer\",\n    address = \"Cham, Switzerland\",\n    pages = \"37--48\",\n    year = \"2017\",\n    doi = \"10.1007/978-3-319-71069-3\\_3\",\n    abstract = \"Considers the identification problem for diploid cellular automata based on a series of observed configurations:contentReference[oaicite:9]{index=9}:contentReference[oaicite:10]{index=10}. Proposes an algorithm using statistical parameter estimation (normal approximation) to recover both the underlying pair of CA rules (diploid rule) and missing cell states from incomplete data. The method’s accuracy is validated via computational experiments.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1007/978-3-319-71069-3_3"
+
+
+[[publications]]
+title = "Density-conserving affine continuous cellular automata solving the relaxed density classification problem"
+authors = [ "Barbara Wolnik", "Marcin Dembowski", "Witold Bołt", "Jan Baetens", "Bernard Baets",]
+year = 2017
+type = "Journal"
+venue = "Journal of Physics A: Mathematical and Theoretical"
+bibtex = "@article{Wolnik2017a,\n    author = \"Wolnik, Barbara and Dembowski, Marcin and Bołt, Witold and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"Density-conserving affine continuous cellular automata solving the relaxed density classification problem\",\n    journal = \"Journal of Physics A: Mathematical and Theoretical\",\n    volume = \"50\",\n    number = \"34\",\n    pages = \"345103\",\n    year = \"2017\",\n    doi = \"10.1088/1751-8121/aa7d86\",\n    abstract = \"Introduces a class of continuous-state cellular automata (affine CA) that conserve total “density” and demonstrates their ability to solve a relaxed version of the density classification problem:contentReference[oaicite:11]{index=11}:contentReference[oaicite:12]{index=12}. The paper provides a complete description of the dynamics of these affine continuous CA, showing that by leveraging continuity and density conservation, the global majority can be decided under relaxed conditions.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1088/1751-8121/aa7d86"
+
+
+[[publications]]
+title = "Number-conserving cellular automata with a von Neumann neighborhood of range one"
+authors = [ "Barbara Wolnik", "Adam Dzedzej", "Jan Baetens", "Bernard Baets",]
+year = 2017
+type = "Journal"
+venue = "Journal of Physics A: Mathematical and Theoretical"
+bibtex = "@article{Wolnik2017b,\n    author = \"Wolnik, Barbara and Dzedzej, Adam and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"Number-conserving cellular automata with a von Neumann neighborhood of range one\",\n    journal = \"Journal of Physics A: Mathematical and Theoretical\",\n    volume = \"50\",\n    number = \"43\",\n    pages = \"435101\",\n    year = \"2017\",\n    doi = \"10.1088/1751-8121/aa89cf\",\n    abstract = \"Classifies all one-step von Neumann neighborhood cellular automata (range 1) that conserve the total number of active cells:contentReference[oaicite:13]{index=13}:contentReference[oaicite:14]{index=14}. It is proven that any binary number-conserving rule on the standard 2D grid with range-one von Neumann neighborhood is “intrinsically one-dimensional,” meaning its behavior decomposes into independent 1D processes along coordinate directions.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1088/1751-8121/aa89cf"
+
+
+[[publications]]
+title = "A Note on the Reversibility of 2D Cellular Automata on Hexagonal Grids"
+authors = [ "Antoni Augustynowicz", "Jan Baetens", "Bernard Baets", "Adam Dzedzej", "Anna Nenca", "Barbara Wolnik",]
+year = 2018
+type = "Journal"
+venue = "Journal of Cellular Automata"
+bibtex = "@article{Augustynowicz2018,\n    author = \"Augustynowicz, Antoni and Baetens, Jan M. and Baets, Bernard De and Dzedzej, Adam and Nenca, Anna and Wolnik, Barbara\",\n    title = \"A Note on the Reversibility of 2D Cellular Automata on Hexagonal Grids\",\n    journal = \"Journal of Cellular Automata\",\n    volume = \"13\",\n    number = \"5--6\",\n    pages = \"521--525\",\n    year = \"2018\",\n    abstract = \"Provides a short analysis of reversibility in two-dimensional cellular automata defined on a hexagonal grid:contentReference[oaicite:15]{index=15}:contentReference[oaicite:16]{index=16}. The authors identify conditions under which number-conserving CA on a hexagonal lattice are reversible, and they correct some misconceptions in earlier literature by constructing counterexamples on the hexagonal topology.\"\n}\n"
+
+[[publications]]
+title = "Affine continuous cellular automata solving the fixed-length density classification problem"
+authors = [ "Marcin Dembowski", "Barbara Wolnik", "Witold Bołt", "Jan Baetens", "Bernard Baets",]
+year = 2018
+type = "Journal"
+venue = "Natural Computing"
+bibtex = "@article{Dembowski2018,\n    author = \"Dembowski, Marcin and Wolnik, Barbara and Bołt, Witold and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"Affine continuous cellular automata solving the fixed-length density classification problem\",\n    journal = \"Natural Computing\",\n    volume = \"17\",\n    number = \"3\",\n    pages = \"467--477\",\n    year = \"2018\",\n    doi = \"10.1007/s11047-017-9631-4\",\n    abstract = \"Considers the standard density classification task for binary strings of fixed length in the setting of affine continuous cellular automata:contentReference[oaicite:17]{index=17}:contentReference[oaicite:18]{index=18}. The paper presents an affine CA rule that, for any given length, converges to all-0 or all-1 states correctly for initial densities below or above 0.5, thus effectively solving the density classification problem in a continuous-state context.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1007/s11047-017-9631-4"
+
+
+[[publications]]
+title = "All binary number-conserving cellular automata based on adjacent cells are intrinsically one-dimensional"
+authors = [ "Barbara Wolnik", "Bernard Baets",]
+year = 2019
+type = "Journal"
+venue = "Physical Review E"
+bibtex = "@article{Wolnik2019a,\n    author = \"Wolnik, Barbara and Baets, Bernard De\",\n    title = \"All binary number-conserving cellular automata based on adjacent cells are intrinsically one-dimensional\",\n    journal = \"Physical Review E\",\n    volume = \"100\",\n    number = \"2\",\n    pages = \"022126\",\n    year = \"2019\",\n    doi = \"10.1103/PhysRevE.100.022126\",\n    abstract = \"Proves that any binary cellular automaton rule which conserves the number of 1s and uses only adjacent cells in its update (radius 1 in 1D or 2D neighborhoods of range 1) cannot create genuinely higher-dimensional behavior:contentReference[oaicite:19]{index=19}:contentReference[oaicite:20]{index=20}. Such rules decompose into effectively one-dimensional dynamics, implying that multi-dimensional number-conserving rules of this type exhibit no new behavior beyond their 1D projections.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1103/PhysRevE.100.022126"
+
+
+[[publications]]
+title = "A two-layer representation of four-state reversible number-conserving 2D cellular automata"
+authors = [ "Adam Dzedzej", "Barbara Wolnik", "Maciej Dziemiańczuk", "Anna Nenca", "Jan Baetens", "Bernard Baets",]
+year = 2019
+type = "Journal"
+venue = "Journal of Statistical Mechanics: Theory and Experiment"
+bibtex = "@article{Dzedzej2019,\n    author = \"Dzedzej, Adam and Wolnik, Barbara and Dziemiańczuk, Maciej and Nenca, Anna and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"A two-layer representation of four-state reversible number-conserving 2D cellular automata\",\n    journal = \"Journal of Statistical Mechanics: Theory and Experiment\",\n    year = \"2019\",\n    number = \"7\",\n    pages = \"073202\",\n    doi = \"10.1088/1742-5468/ab24b0\",\n    abstract = \"Introduces a novel two-layer representation to analyze two-dimensional reversible cellular automata that conserve a quantity (number of particles) using four states:contentReference[oaicite:21]{index=21}:contentReference[oaicite:22]{index=22}. By decomposing the automaton into two coupled layers, the authors fully characterize the family of four-state reversible number-conserving rules in 2D, providing insight into their structure and simplifying the search for such rules.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1088/1742-5468/ab24b0"
+
+
+[[publications]]
+title = "Two-dimensional affine continuous cellular automata solving the relaxed density classification problem"
+authors = [ "Marcin Dembowski", "Barbara Wolnik", "Witold Bołt", "Jan Baetens", "Bernard Baets",]
+year = 2019
+type = "Journal"
+venue = "Journal of Cellular Automata"
+bibtex = "@article{Dembowski2019,\n    author = \"Dembowski, Marcin and Wolnik, Barbara and Bołt, Witold and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"Two-dimensional affine continuous cellular automata solving the relaxed density classification problem\",\n    journal = \"Journal of Cellular Automata\",\n    volume = \"14\",\n    number = \"3--4\",\n    pages = \"191--212\",\n    year = \"2019\",\n    abstract = \"Extends earlier work on continuous affine cellular automata to two dimensions for the relaxed density classification problem:contentReference[oaicite:23]{index=23}:contentReference[oaicite:24]{index=24}. The paper constructs a family of 2D affine continuous CA that reliably converge to a consensus state (all 0s or all 1s) depending on whether initial density is below or above a threshold, highlighting how spatial continuity and rotation-invariance aid global coordination.\"\n}\n"
+
+[[publications]]
+title = "Ternary reversible number-conserving cellular automata are trivial"
+authors = [ "Barbara Wolnik", "Bernard Baets",]
+year = 2020
+type = "Journal"
+venue = "Information Sciences"
+bibtex = "@article{Wolnik2020a,\n    author = \"Wolnik, Barbara and Baets, Bernard De\",\n    title = \"Ternary reversible number-conserving cellular automata are trivial\",\n    journal = \"Information Sciences\",\n    volume = \"513\",\n    pages = \"180--189\",\n    year = \"2020\",\n    doi = \"10.1016/j.ins.2019.10.068\",\n    abstract = \"Investigates reversible number-conserving cellular automata with three states (ternary) and shows that no non-trivial examples exist:contentReference[oaicite:25]{index=25}:contentReference[oaicite:26]{index=26}. Any ternary CA rule that is both reversible and number-conserving is proven to be essentially a simple shift or identity rule, implying that introducing a third state (beyond binary) does not allow more complex reversible number-conserving behavior in one dimension.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1016/j.ins.2019.10.068"
+
+
+[[publications]]
+title = "Efficient enumeration of three-state two-dimensional number-conserving cellular automata"
+authors = [ "Adam Dzedzej", "Barbara Wolnik", "Anna Nenca", "Jan Baetens", "Bernard Baets",]
+year = 2020
+type = "Journal"
+venue = "Information and Computation"
+bibtex = "@article{Dzedzej2020,\n    author = \"Dzedzej, Adam and Wolnik, Barbara and Nenca, Anna and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"Efficient enumeration of three-state two-dimensional number-conserving cellular automata\",\n    journal = \"Information and Computation\",\n    volume = \"274\",\n    pages = \"104534\",\n    year = \"2020\",\n    doi = \"10.1016/j.ic.2020.104534\",\n    abstract = \"Presents a methodology to systematically enumerate all number-conserving cellular automata with three states in two dimensions (von Neumann neighborhood):contentReference[oaicite:27]{index=27}:contentReference[oaicite:28]{index=28}. By exploiting combinatorial constraints and symmetry, the authors dramatically reduce the search space and list all such 2D three-state number-conserving CA rules. This exhaustive enumeration confirms known rules and discovers new ones, providing a complete catalogue for further analysis.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1016/j.ic.2020.104534"
+
+
+[[publications]]
+title = "A split-and-perturb decomposition of number-conserving cellular automata"
+authors = [ "Barbara Wolnik", "Anna Nenca", "Jan Baetens", "Bernard Baets",]
+year = 2020
+type = "Journal"
+venue = "Physica D: Nonlinear Phenomena"
+bibtex = "@article{Wolnik2020b,\n    author = \"Wolnik, Barbara and Nenca, Anna and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"A split-and-perturb decomposition of number-conserving cellular automata\",\n    journal = \"Physica D: Nonlinear Phenomena\",\n    volume = \"413\",\n    pages = \"132645\",\n    year = \"2020\",\n    doi = \"10.1016/j.physd.2020.132645\",\n    abstract = \"Proposes a “split-and-perturb” technique to analyze and classify number-conserving cellular automata:contentReference[oaicite:29]{index=29}:contentReference[oaicite:30]{index=30}. The method splits the CA rule into simpler components that conserve number, plus small perturbations. Using this decomposition, the authors derive structural properties of number-conserving CA and provide insight into how small deviations from pure number-conservation affect dynamical behavior.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1016/j.physd.2020.132645"
+
+
+[[publications]]
+title = "Two-dimensional rotation-symmetric number-conserving cellular automata"
+authors = [ "Adam Dzedzej", "Barbara Wolnik", "Anna Nenca", "Jan Baetens", "Bernard Baets",]
+year = 2021
+type = "Journal"
+venue = "Information Sciences"
+bibtex = "@article{Dzedzej2021,\n    author = \"Dzedzej, Adam and Wolnik, Barbara and Nenca, Anna and Baetens, Jan M. and Baets, Bernard De\",\n    title = \"Two-dimensional rotation-symmetric number-conserving cellular automata\",\n    journal = \"Information Sciences\",\n    volume = \"577\",\n    pages = \"599--621\",\n    year = \"2021\",\n    doi = \"10.1016/j.ins.2021.06.041\",\n    abstract = \"Characterizes cellular automata in two dimensions that conserve number and are invariant under 90-degree rotations:contentReference[oaicite:31]{index=31}:contentReference[oaicite:32]{index=32}. The paper proves that requiring rotation symmetry severely restricts the possible number-conserving rules. All rotation-symmetric number-conserving CA in 2D are enumerated for small neighborhoods, revealing that very few non-trivial rules exist and connecting these findings to known one-dimensional results.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1016/j.ins.2021.06.041"
+
+
+[[publications]]
+title = "Recurrent Misconceptions in the Study of CA Reversibility on Triangular Grids"
+authors = [ "Barbara Wolnik", "Maciej Dziemiańczuk", "Bernard Baets",]
+year = 2021
+type = "Journal"
+venue = "International Journal of Bifurcation and Chaos"
+bibtex = "@article{Wolnik2021,\n    author = \"Wolnik, Barbara and Dziemiańczuk, Maciej and Baets, Bernard De\",\n    title = \"Recurrent Misconceptions in the Study of CA Reversibility on Triangular Grids\",\n    journal = \"International Journal of Bifurcation and Chaos\",\n    volume = \"31\",\n    number = \"1\",\n    pages = \"2150014 (6 pages)\",\n    year = \"2021\",\n    doi = \"10.1142/S0218127421500140\",\n    abstract = \"Addresses and clarifies several persistent errors in prior research on reversible cellular automata defined on 2D triangular lattices:contentReference[oaicite:33]{index=33}:contentReference[oaicite:34]{index=34}. Through counterexamples and rigorous analysis, the authors demonstrate which previously assumed reversible CA rules on triangular grids are actually irreversible. This short communication corrects the literature and establishes a proper understanding of CA reversibility in triangular neighborhoods.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1142/S0218127421500140"
+
+
+[[publications]]
+title = "Reversibility of number-conserving 1D cellular automata: unlocking insights into the dynamics for larger state sets"
+authors = [ "Barbara Wolnik", "Maciej Dziemiańczuk", "Adam Dzedzej", "Bernard Baets",]
+year = 2022
+type = "Journal"
+venue = "Physica D: Nonlinear Phenomena"
+bibtex = "@article{Wolnik2022,\n    author = \"Wolnik, Barbara and Dziemiańczuk, Maciej and Dzedzej, Adam and Baets, Bernard De\",\n    title = \"Reversibility of number-conserving 1D cellular automata: unlocking insights into the dynamics for larger state sets\",\n    journal = \"Physica D: Nonlinear Phenomena\",\n    volume = \"429\",\n    pages = \"133075\",\n    year = \"2022\",\n    doi = \"10.1016/j.physd.2021.133075\",\n    abstract = \"Investigates reversible cellular automata in one dimension that conserve number of states, focusing on alphabets larger than binary:contentReference[oaicite:35]{index=35}:contentReference[oaicite:36]{index=36}. By examining the dynamics for higher-state systems, the authors identify patterns and constraints unique to multi-state number-conserving reversible CA. The study provides new insights by extending classic results (like the triviality of binary reversible number-conserving CA) to larger state sets, revealing how increased state diversity affects reversibility and conservation properties.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1016/j.physd.2021.133075"
+
+
+[[publications]]
+title = "Non-uniform number-conserving elementary cellular automata"
+authors = [ "Barbara Wolnik", "Maciej Dziemiańczuk", "Bernard Baets",]
+year = 2023
+type = "Journal"
+venue = "Information Sciences"
+bibtex = "@article{Wolnik2023a,\n    author = \"Wolnik, Barbara and Dziemiańczuk, Maciej and Baets, Bernard De\",\n    title = \"Non-uniform number-conserving elementary cellular automata\",\n    journal = \"Information Sciences\",\n    volume = \"626\",\n    pages = \"851--866\",\n    year = \"2023\",\n    doi = \"10.1016/j.ins.2023.01.033\",\n    abstract = \"Examines one-dimensional cellular automata with non-uniform local update rules (each cell may follow a different Wolfram rule) under the constraint of number-conservation:contentReference[oaicite:37]{index=37}:contentReference[oaicite:38]{index=38}. The authors derive a complete characterization of all such non-uniform number-conserving elementary CA on finite rings. Surprisingly, even with non-uniformity, these CA cannot perform the global parity or density tasks beyond what uniform CA achieve, reinforcing the intrinsic one-dimensional limitations of number-conservation.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1016/j.ins.2023.01.033"
+
+
+[[publications]]
+title = "Non-uniform number-conserving elementary cellular automata on the infinite grid: a tale of the unexpected"
+authors = [ "Barbara Wolnik", "Maciej Dziemiańczuk", "Bernard Baets",]
+year = 2023
+type = "Journal"
+venue = "Information Sciences"
+bibtex = "@article{Wolnik2023b,\n    author = \"Wolnik, Barbara and Dziemiańczuk, Maciej and Baets, Bernard De\",\n    title = \"Non-uniform number-conserving elementary cellular automata on the infinite grid: a tale of the unexpected\",\n    journal = \"Information Sciences\",\n    volume = \"649\",\n    pages = \"119680\",\n    year = \"2023\",\n    doi = \"10.1016/j.ins.2023.119680\",\n    abstract = \"Contrary to the finite case, non-uniform number-conserving cellular automata exhibit novel behavior on an infinite lattice. This study shows that when considered on an infinite grid, certain combinations of local rules can achieve global tasks that were impossible on finite grids. The authors identify a family of unexpected number-conserving rules unique to the infinite setting, providing an answer to an open question and revealing a sharp distinction between finite and infinite CA dynamics.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1016/j.ins.2023.119680"
+
+
+[[publications]]
+title = "An exploration of reversible septenary number-conserving cellular automata: a survey of known methods"
+authors = [ "Barbara Wolnik", "Adam Dzedzej", "Maciej Dziemiańczuk", "Aleksander Wardyn", "Bernard Baets",]
+year = 2023
+type = "Journal"
+venue = "Natural Computing"
+bibtex = "@article{Wolnik2023c,\n    author = \"Wolnik, Barbara and Dzedzej, Adam and Dziemiańczuk, Maciej and Wardyn, Aleksander and Baets, Bernard De\",\n    title = \"An exploration of reversible septenary number-conserving cellular automata: a survey of known methods\",\n    journal = \"Natural Computing\",\n    volume = \"22\",\n    number = \"3\",\n    pages = \"463--475\",\n    year = \"2023\",\n    doi = \"10.1007/s11047-023-09949-y\",\n    abstract = \"Little is known about the dynamics of reversible number-conserving cellular automata with higher-state alphabets. Here, we present preliminary results for the case of seven states:contentReference[oaicite:39]{index=39}. In particular, one of the most complex 7-state reversible number-conserving rules is examined in detail, and a full description of its dynamics is provided. The paper surveys and compares existing methods for analyzing such CA, highlighting the challenges and offering new insights for k-ary reversible number-conserving systems.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1007/s11047-023-09949-y"
+
+
+[[publications]]
+title = "A directed graph allowing for the exploration of the set of number-conserving non-uniform one-dimensional binary cellular automata with radius one and half"
+authors = [ "Barbara Wolnik", "Maciej Dziemiańczuk", "Bartosz Makuracki", "Bernard Baets",]
+year = 2025
+type = "Journal"
+venue = "Natural Computing"
+bibtex = "@article{Wolnik2025a,\n    author = \"Wolnik, Barbara and Dziemiańczuk, Maciej and Makuracki, Bartosz and Baets, Bernard De\",\n    title = \"A directed graph allowing for the exploration of the set of number-conserving non-uniform one-dimensional binary cellular automata with radius one and half\",\n    journal = \"Natural Computing\",\n    volume = \"24\",\n    pages = \"to appear, article published online May 2025\",\n    year = \"2025\",\n    doi = \"10.1007/s11047-025-10015-y\",\n    abstract = \"The main obstacle in the quest for non-uniform cellular automata that exhibit number conservation is the vast search space beyond the reach of brute-force exploration. We construct a directed graph $\\Pi$ that represents all length-$n$ configurations of non-uniform 1D binary cellular automata with neighborhood radius $1.5$ (one left neighbor, two right neighbors):contentReference[oaicite:40]{index=40}. We prove a one-to-one correspondence between number-conserving CA on an $n$-cell ring and closed directed walks of length $n$ in $\\Pi$. This graph-based representation provides a powerful tool to investigate and enumerate non-uniform number-conserving rules:contentReference[oaicite:41]{index=41}, significantly reducing the complexity of exploring this rule space.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.1007/s11047-025-10015-y"
+
+
+[[publications]]
+title = "Cellular automata can really solve the parity problem"
+authors = [ "Barbara Wolnik", "Anna Nenca", "Pedro Balbi", "Bernard Baets",]
+year = 2025
+type = "Journal"
+venue = "arXiv e-prints"
+bibtex = "@article{Wolnik2025b,\n    author = \"Wolnik, Barbara and Nenca, Anna and Balbi, Pedro Paulo and Baets, Bernard De\",\n    title = \"Cellular automata can really solve the parity problem\",\n    journal = \"arXiv e-prints\",\n    volume = \"arXiv:2501.08684\",\n    year = \"2025\",\n    doi = \"10.48550/arXiv.2501.08684\",\n    abstract = \"Determining the parity (even vs. odd count of 1s) of a binary sequence by local processing has been a longstanding challenge in automata networks. The classical formulation asks for a one-dimensional cellular automaton that, for any odd-length cyclic binary configuration, converges to all-0 if the number of 1s is even or to all-1 if the number of 1s is odd:contentReference[oaicite:42]{index=42}. The only known solution (“BFO rule”) was later found to fail on certain configurations. In this paper, we present a corrected single-rule solution to the parity problem along with a complete proof of its correctness:contentReference[oaicite:43]{index=43}. Our result demonstrates that cellular automata *can* reliably solve the global parity task, resolving an open problem by providing a fully validated rule that achieves consensus on parity.\"\n}\n"
+[[publications.links]]
+name = "DOI"
+url = "https://doi.org/10.48550/arXiv.2501.08684"
+
+

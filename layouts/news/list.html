@@ -1,0 +1,48 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Params.description }}
+  <div class="post-description">
+    {{ .Params.description }}
+  </div>
+  {{- end }}
+</header>
+
+<div class="post-content">
+  {{- if .Content }}
+  {{ .Content }}
+  {{- end }}
+</div>
+
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- if .Site.Params.ShowAllPagesInArchive }}
+{{- $pages = site.RegularPages }}
+{{- else }}
+{{- $pages = where site.RegularPages "Type" "in" (slice "news") }}
+{{- end }}
+
+{{- range $pages.ByDate.Reverse }}
+{{- if eq .Type "news" }}
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>
+      <a href="{{ .Permalink }}" aria-label="post link to {{ .Title | plainify }}">{{ .Title }}</a>
+    </h2>
+  </header>
+  <div class="entry-meta">
+    {{- if not .Date.IsZero -}}
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    {{- end }}
+  </div>
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  <footer class="entry-footer">
+    <a href="{{ .Permalink }}">Read more →</a>
+  </footer>
+</article>
+{{- end }}
+{{- end }}
+
+{{- end }}{{/* end main */}}

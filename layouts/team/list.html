@@ -1,0 +1,37 @@
+{{ define "main" }}
+<h1>Meet the Team</h1>
+<div class="team-grid">
+  {{ $team := slice }}
+  {{ range $name, $member := .Site.Data.team }}
+    {{ $member = merge (dict "weight" 999 "name" $member.last_name "slug" $name) $member }}
+    {{ $team = $team | append $member }}
+  {{ end }}
+  
+  {{ $sorted_name :=  sort $team "name" }}
+  {{ $sorted :=  sort $sorted_name "weight" }}
+
+  {{ range $member := $sorted }}
+    <div class="team-member">
+      <a href="/team/{{ $member.slug }}/" class="team-member-link">
+        <img src="/{{ $member.avatar }}" alt="{{ $member.first_name }} {{ $member.last_name }}" class="avatar" />
+        <h3>{{ $member.deg }} {{ $member.first_name }} {{ $member.last_name }}</h3>
+      </a>
+      <p class="role">{{ $member.role }}</p>
+      <p class="affiliation">{{ $member.affiliation }}</p>
+      <p class="email"><a href="mailto:{{ $member.email }}">{{ $member.email }}</a></p>
+      <div class="social-icons">
+        {{ range $member.links }}
+        <li style="display:inline-block; margin-right:10px;">
+          <a href="{{ .url }}" target="_blank">
+            <i class="fab fa-{{ .name }}"></i>
+          </a>
+          </li>
+        {{ end }}
+      </div>
+      <div class="team-member-actions">
+        <a href="/team/{{ $member.slug }}/" class="view-profile-btn">View Full Profile</a>
+      </div>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

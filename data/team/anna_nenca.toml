@@ -1,0 +1,44 @@
+first_name = "Anna"
+last_name = "Nenca"
+deg = "dr"
+role = "Assistant Professor"
+affiliation = "University of Gdansk"
+email = "anna.nenca@ug.edu.pl"
+avatar = "photos/ania.jpg"
+weight = 2
+
+# Detailed information for individual page
+bio = """
+Dr. Anna Nenca is an Assistant Professor at the University of Gdansk with expertise in economic research and policy analysis. 
+She focuses on applied economics and has contributed significantly to understanding market dynamics and economic behavior.
+"""
+
+research_interests = [
+  "Applied Economics",
+  "Market Analysis",
+  "Economic Policy",
+  "Behavioral Economics"
+]
+
+education = [
+  { degree = "Ph.D. in Economics", institution = "University of Gdansk", year = "2018" },
+  { degree = "M.A. in Economics", institution = "University of Gdansk", year = "2014" }
+]
+
+experience = [
+  { position = "Assistant Professor", organization = "University of Gdansk", period = "2018 - Present", description = "Teaching and conducting research in applied economics and market analysis." },
+  { position = "Research Assistant", organization = "University of Gdansk", period = "2014 - 2018", description = "Supported research projects in economic policy and market behavior analysis." }
+]
+
+publications_highlight = [
+  "Market Dynamics in Emerging Economies (2023)",
+  "Policy Impact Assessment Methods (2022)",
+  "Behavioral Patterns in Consumer Markets (2021)"
+]
+
+links = [
+  { name = "orcid", url = "https://orcid.org/0000-0003-2935-5529" },
+  { name = "google-scholar", url = "https://scholar.google.com/citations?user=MS6NxAQAAAAJ" },
+  { name = "linkedin", url = "https://www.linkedin.com/in/anna-nenca-816502253/" },
+  { name = "researchgate", url = "https://www.researchgate.net/profile/Barbara-Wolnik-2"}
+]

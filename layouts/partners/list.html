@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="post-content">
+  <h1>{{ .Title }}</h1>
+  
+  <h2>KERMIT</h2>
+  
+  <p><strong>KERMIT</strong> is a research team at the Faculty of Bioscience Engineering of Ghent University, Belgium. The team is led by <strong>prof. Bernard De Baets</strong> - a mentor, friend and close collaborator of our team.</p>
+  
+  <p>Three of our team members are former PhD students of prof. De Baets:</p>
+  
+  {{ $teamMembers := slice "adam_dzedzej" "witold_bolt" "marcin_dembowski" }}
+  {{ $defenseInfo := dict "adam_dzedzej" "defended in 2019" "witold_bolt" "defended in 2024" "marcin_dembowski" "defense scheduled for 2025" }}
+  
+  <div class="team-members-list">
+    {{ range $teamMembers }}
+      {{ $memberFile := printf "data/team/%s.toml" . }}
+      {{ $memberData := index $.Site.Data.team . }}
+      {{ if $memberData }}
+        <div class="team-member-item">
+          <span class="team-author-with-avatar">
+            <img src="{{ $memberData.avatar | relURL }}" alt="{{ $memberData.first_name }} {{ $memberData.last_name }}" class="author-avatar">
+            <a href="{{ printf "/team/%s/" . | relURL }}" class="team-author-link">
+              <strong class="team-author">{{ $memberData.first_name }} {{ $memberData.last_name }}</strong>
+            </a>, 
+          </span>
+          <span class="defense-info">{{ index $defenseInfo . }}</span>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+  
+  <p>More info: <a href="https://kermit.ugent.be">https://kermit.ugent.be</a></p>
+</div>
+{{ end }}

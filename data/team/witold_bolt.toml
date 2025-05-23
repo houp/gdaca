@@ -1,0 +1,40 @@
+first_name = "Witold"
+last_name = "Bołt"
+deg = "dr"
+role = "Independent Research"
+affiliation = "Jit Team"
+email = "witold.bolt@jit.team"
+avatar = "photos/witek.jpg"
+weight = 1
+
+# Detailed information for individual page
+bio = """
+Dr. Witold Bołt is an independent researcher specializing in computational economics and financial modeling. 
+He has extensive experience in developing innovative solutions for financial institutions and research organizations.
+"""
+
+research_interests = [
+  "Computational Economics",
+  "Financial Modeling",
+  "Data Science",
+  "Machine Learning Applications in Finance"
+]
+
+education = [
+  { degree = "Ph.D. in Economics", institution = "University of Warsaw", year = "2015" },
+  { degree = "M.Sc. in Computer Science", institution = "Warsaw University of Technology", year = "2010" }
+]
+
+experience = [
+  { position = "Independent Researcher", organization = "Jit Team", period = "2020 - Present", description = "Leading research projects in computational economics and financial modeling." },
+  { position = "Senior Data Scientist", organization = "Financial Analytics Corp", period = "2018 - 2020", description = "Developed machine learning models for risk assessment and portfolio optimization." },
+  { position = "Research Associate", organization = "University of Warsaw", period = "2015 - 2018", description = "Conducted research in behavioral economics and experimental finance." }
+]
+
+links = [
+  { name = "orcid", url = "https://orcid.org/0000-0001-6787-2100" },
+  { name = "google-scholar", url = "https://scholar.google.com/citations?user=gzPEHZ8AAAAJ" },
+  { name = "linkedin", url = "https://www.linkedin.com/in/witoldbolt/" },
+  { name = "researchgate", url = "https://www.researchgate.net/profile/Witold-Bolt" },
+  { name = "github", url = "https://github.com/houp" }  
+]

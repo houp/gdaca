@@ -1,0 +1,43 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Params.description }}
+  <div class="post-description">
+    {{ .Params.description }}
+  </div>
+  {{- end }}
+</header>
+
+<div class="post-content">
+  {{- if .Content }}
+  {{ .Content }}
+  {{- end }}
+</div>
+
+<!-- Filter by type -->
+<div class="publications-filter">
+  <label for="type-filter"><strong>Filter by Type:</strong></label>
+  <select id="type-filter" onchange="filterPubs()">
+    <option value="">All</option>
+    <option value="Conference">Conference</option>
+    <option value="Journal">Journal</option>
+    <option value="Chapter">Chapter</option>
+    <option value="Pre-print">Pre-print</option>
+  </select>
+</div>
+
+{{ $pubs := .Site.Data.publications.publications }}
+{{ $teamAuthors := site.Data.team_authors.authors }}
+
+{{/* Create a mapping from author names to team member data */}}
+{{ $teamMemberMap := dict }}
+{{ $siteData := .Site.Data.team }}
+{{ range $filename, $memberData := $siteData }}
+  {{ $fullName := printf "%s %s" $memberData.first_name $memberData.last_name }}
+  {{ $teamMemberMap = merge $teamMemberMap (dict $fullName (dict "data" $memberData "filename" $filename)) }}
+{{ end }}
+
+{{ partial "publication-list.html" (dict "publications" $pubs "teamAuthors" $teamAuthors "teamMemberMap" $teamMemberMap "showYearHeaders" true "sortOrder" "desc") }}
+
+{{ end }}

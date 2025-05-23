@@ -1,0 +1,13 @@
+first_name = "Bartosz"
+last_name = "Makuracki"
+deg = "dr"
+role = "Assistant Professor"
+affiliation = "University of Gdansk"
+email = "bartosz.makuracki@ug.edu.pl"
+avatar = "photos/bartosz.jpg"
+links = [
+  { name = "orcid", url = "https://orcid.org/0000-0003-2935-5529" },
+  { name = "google-scholar", url = "https://scholar.google.com/citations?user=MS6NxAQAAAAJ" },
+  { name = "linkedin", url = "https://www.linkedin.com/in/barbara-wolnik-865b57253/" },
+  { name = "researchgate", url = "https://www.researchgate.net/profile/Barbara-Wolnik-2"}
+]

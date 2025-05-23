@@ -1,0 +1,134 @@
+{{ define "main" }}
+{{ $slug := .File.BaseFileName }}
+{{ $member := index .Site.Data.team $slug }}
+
+{{ if $member }}
+<div class="team-member-detail">
+  <div class="team-member-header">
+    <div class="team-member-photo">
+      <img src="/{{ $member.avatar }}" alt="{{ $member.first_name }} {{ $member.last_name }}" class="avatar-large" />
+    </div>
+    <div class="team-member-basic-info">
+      <h1>{{ $member.deg }} {{ $member.first_name }} {{ $member.last_name }}</h1>
+      <p class="role">{{ $member.role }}</p>
+      <p class="affiliation">{{ $member.affiliation }}</p>
+      <p class="email"><a href="mailto:{{ $member.email }}">{{ $member.email }}</a></p>
+      
+      <div class="social-links">
+        {{ range $member.links }}
+        <a href="{{ .url }}" target="_blank" class="social-link">
+          <i class="fab fa-{{ .name }}"></i>
+          <span>{{ .name | title }}</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  {{ if $member.bio }}
+  <section class="bio-section">
+    <h2>Biography</h2>
+    <div class="bio-content">
+      {{ $member.bio | markdownify }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $member.research_interests }}
+  <section class="research-interests-section">
+    <h2>Research Interests</h2>
+    <ul class="research-interests-list">
+      {{ range $member.research_interests }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{ if $member.education }}
+  <section class="education-section">
+    <h2>Education</h2>
+    <div class="education-list">
+      {{ range $member.education }}
+      <div class="education-item">
+        <h3>{{ .degree }}</h3>
+        <p class="institution">{{ .institution }}</p>
+        <p class="year">{{ .year }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $member.experience }}
+  <section class="experience-section">
+    <h2>Professional Experience</h2>
+    <div class="experience-list">
+      {{ range $member.experience }}
+      <div class="experience-item">
+        <h3>{{ .position }}</h3>
+        <p class="organization">{{ .organization }}</p>
+        <p class="period">{{ .period }}</p>
+        {{ if .description }}
+        <p class="description">{{ .description }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $member.publications_highlight }}
+  <section class="publications-section">
+    <h2>Selected Publications</h2>
+    <ul class="publications-list">
+      {{ range $member.publications_highlight }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <!-- Publications by this author -->
+  <section class="author-publications-section">
+    <h2>Publications</h2>
+    {{ $authorName := printf "%s %s" $member.first_name $member.last_name }}
+    {{ $teamAuthors := site.Data.team_authors.authors }}
+    
+    {{/* Create a mapping from author names to team member data */}}
+    {{ $teamMemberMap := dict }}
+    {{ $siteData := .Site.Data.team }}
+    {{ range $filename, $memberData := $siteData }}
+      {{ $fullName := printf "%s %s" $memberData.first_name $memberData.last_name }}
+      {{ $teamMemberMap = merge $teamMemberMap (dict $fullName (dict "data" $memberData "filename" $filename)) }}
+    {{ end }}
+    
+    {{ $publications := slice }}
+    {{ range .Site.Data.publications.publications }}
+      {{ $isAuthor := false }}
+      {{ range .authors }}
+        {{ if eq . $authorName }}
+          {{ $isAuthor = true }}
+        {{ end }}
+      {{ end }}
+      {{ if $isAuthor }}
+        {{ $publications = $publications | append . }}
+      {{ end }}
+    {{ end }}
+    
+    {{ partial "publication-list.html" (dict "publications" $publications "teamAuthors" $teamAuthors "teamMemberMap" $teamMemberMap "showYearHeaders" false "sortOrder" "desc") }}
+  </section>
+
+  <div class="back-to-team">
+    <a href="/team/" class="back-link">← Back to Team</a>
+  </div>
+</div>
+
+{{ else }}
+<div class="error-message">
+  <h1>Team Member Not Found</h1>
+  <p>The requested team member could not be found.</p>
+  <a href="/team/" class="back-link">← Back to Team</a>
+</div>
+{{ end }}
+{{ end }}

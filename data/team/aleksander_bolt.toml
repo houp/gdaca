@@ -1,0 +1,12 @@
+first_name = "Aleksander"
+last_name = "Bołt"
+role = "Independent Researcher"
+affiliation = "Jit Team"
+email = "aleksander.bolt@jit.team"
+avatar = "photos/olek.png"
+links = [
+  { name = "orcid", url = "https://orcid.org/0000-0003-2935-5529" },
+  { name = "google-scholar", url = "https://scholar.google.com/citations?user=MS6NxAQAAAAJ" },
+  { name = "linkedin", url = "https://www.linkedin.com/in/aleksander-bołt-02b2ab15b/" },
+  { name = "researchgate", url = "https://www.researchgate.net/profile/Aleksander-Bolt"}
+]
